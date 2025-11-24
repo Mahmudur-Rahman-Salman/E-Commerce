@@ -1,0 +1,667 @@
+[
+  {
+    "id": 1,
+    "title": "Elegant Golden-Base Stone Top Dining Table",
+    "slug": "elegant-golden-base-stone-top-dining-table",
+    "price": 66,
+    "description": "Elevate your dining space with this luxurious table, featuring a sturdy golden metal base with an intricate rod design that provides both stability and chic elegance. The smooth stone top in a sleek round shape offers a robust surface for your dining pleasure. Perfect for both everyday meals and special occasions, this table easily complements any modern or glam decor.",
+    "category": {
+      "id": 1,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/NWIJKUj.jpeg",
+      "https://i.imgur.com/Jn1YSLk.jpeg",
+      "https://i.imgur.com/VNZRvx5.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Modern Elegance Teal Armchair",
+    "slug": "modern-elegance-teal-armchair",
+    "price": 25,
+    "description": "Elevate your living space with this beautifully crafted armchair, featuring a sleek wooden frame that complements its vibrant teal upholstery. Ideal for adding a pop of color and contemporary style to any room, this chair provides both superb comfort and sophisticated design. Perfect for reading, relaxing, or creating a cozy conversation nook.",
+    "category": {
+      "id": 2,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/6wkyyIN.jpeg",
+      "https://i.imgur.com/Ald3Rec.jpeg",
+      "https://i.imgur.com/dIqo03c.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Elegant Solid Wood Dining Table",
+    "slug": "elegant-solid-wood-dining-table",
+    "price": 67,
+    "description": "Enhance your dining space with this sleek, contemporary dining table, crafted from high-quality solid wood with a warm finish. Its sturdy construction and minimalist design make it a perfect addition for any home looking for a touch of elegance. Accommodates up to six guests comfortably and includes a striking fruit bowl centerpiece. The overhead lighting is not included.",
+    "category": {
+      "id": 3,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/4lTaHfF.jpeg",
+      "https://i.imgur.com/JktHE1C.jpeg",
+      "https://i.imgur.com/cQeXQMi.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 4,
+    "title": "Modern Minimalist Workstation Setup",
+    "slug": "modern-minimalist-workstation-setup",
+    "price": 49,
+    "description": "Elevate your home office with our Modern Minimalist Workstation Setup, featuring a sleek wooden desk topped with an elegant computer, stylish adjustable wooden desk lamp, and complimentary accessories for a clean, productive workspace. This setup is perfect for professionals seeking a contemporary look that combines functionality with design.",
+    "category": {
+      "id": 4,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/3oXNBst.jpeg",
+      "https://i.imgur.com/ErYYZnT.jpeg",
+      "https://i.imgur.com/boBPwYW.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 5,
+    "title": "Modern Ergonomic Office Chair",
+    "slug": "modern-ergonomic-office-chair",
+    "price": 71,
+    "description": "Elevate your office space with this sleek and comfortable Modern Ergonomic Office Chair. Designed to provide optimal support throughout the workday, it features an adjustable height mechanism, smooth-rolling casters for easy mobility, and a cushioned seat for extended comfort. The clean lines and minimalist white design make it a versatile addition to any contemporary workspace.",
+    "category": {
+      "id": 5,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/3dU0m72.jpeg",
+      "https://i.imgur.com/zPU3EVa.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 6,
+    "title": "Futuristic Holographic Soccer Cleats",
+    "slug": "futuristic-holographic-soccer-cleats",
+    "price": 39,
+    "description": "Step onto the field and stand out from the crowd with these eye-catching holographic soccer cleats. Designed for the modern player, these cleats feature a sleek silhouette, lightweight construction for maximum agility, and durable studs for optimal traction. The shimmering holographic finish reflects a rainbow of colors as you move, ensuring that you'll be noticed for both your skills and style. Perfect for the fashion-forward athlete who wants to make a statement.",
+    "category": {
+      "id": 6,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/qNOjJje.jpeg",
+      "https://i.imgur.com/NjfCFnu.jpeg",
+      "https://i.imgur.com/eYtvXS1.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 7,
+    "title": "Rainbow Glitter High Heels",
+    "slug": "rainbow-glitter-high-heels",
+    "price": 39,
+    "description": "Step into the spotlight with these eye-catching rainbow glitter high heels. Designed to dazzle, each shoe boasts a kaleidoscope of shimmering colors that catch and reflect light with every step. Perfect for special occasions or a night out, these stunners are sure to turn heads and elevate any ensemble.",
+    "category": {
+      "id": 7,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/62gGzeF.jpeg",
+      "https://i.imgur.com/5MoPuFM.jpeg",
+      "https://i.imgur.com/sUVj7pK.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 8,
+    "title": "Chic Summer Denim Espadrille Sandals",
+    "slug": "chic-summer-denim-espadrille-sandals",
+    "price": 33,
+    "description": "Step into summer with style in our denim espadrille sandals. Featuring a braided jute sole for a classic touch and adjustable denim straps for a snug fit, these sandals offer both comfort and a fashionable edge. The easy slip-on design ensures convenience for beach days or casual outings.",
+    "category": {
+      "id": 8,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/9qrmE1b.jpeg",
+      "https://i.imgur.com/wqKxBVH.jpeg",
+      "https://i.imgur.com/sWSV6DK.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 9,
+    "title": "Vibrant Runners: Bold Orange & Blue Sneakers",
+    "slug": "vibrant-runners-bold-orange-blue-sneakers",
+    "price": 27,
+    "description": "Step into style with these eye-catching sneakers featuring a striking combination of orange and blue hues. Designed for both comfort and fashion, these shoes come with flexible soles and cushioned insoles, perfect for active individuals who don't compromise on style. The reflective silver accents add a touch of modernity, making them a standout accessory for your workout or casual wear.",
+    "category": {
+      "id": 9,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/hKcMNJs.jpeg",
+      "https://i.imgur.com/NYToymX.jpeg",
+      "https://i.imgur.com/HiiapCt.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 10,
+    "title": "Vibrant Pink Classic Sneakers",
+    "slug": "vibrant-pink-classic-sneakers",
+    "price": 84,
+    "description": "Step into style with our Vibrant Pink Classic Sneakers! These eye-catching shoes feature a bold pink hue with iconic white detailing, offering a sleek, timeless design. Constructed with durable materials and a comfortable fit, they are perfect for those seeking a pop of color in their everyday footwear. Grab a pair today and add some vibrancy to your step!",
+    "category": {
+      "id": 10,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/mcW42Gi.jpeg",
+      "https://i.imgur.com/mhn7qsF.jpeg",
+      "https://i.imgur.com/F8vhnFJ.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 11,
+    "title": "Futuristic Silver and Gold High-Top Sneaker",
+    "slug": "futuristic-silver-and-gold-high-top-sneaker",
+    "price": 68,
+    "description": "Step into the future with this eye-catching high-top sneaker, designed for those who dare to stand out. The sneaker features a sleek silver body with striking gold accents, offering a modern twist on classic footwear. Its high-top design provides support and style, making it the perfect addition to any avant-garde fashion collection. Grab a pair today and elevate your shoe game!",
+    "category": {
+      "id": 11,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/npLfCGq.jpeg",
+      "https://i.imgur.com/vYim3gj.jpeg",
+      "https://i.imgur.com/HxuHwBO.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 12,
+    "title": "Futuristic Chic High-Heel Boots",
+    "slug": "futuristic-chic-high-heel-boots",
+    "price": 36,
+    "description": "Elevate your style with our cutting-edge high-heel boots that blend bold design with avant-garde aesthetics. These boots feature a unique color-block heel, a sleek silhouette, and a versatile light grey finish that pairs easily with any cutting-edge outfit. Crafted for the fashion-forward individual, these boots are sure to make a statement.",
+    "category": {
+      "id": 12,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/HqYqLnW.jpeg",
+      "https://i.imgur.com/RlDGnZw.jpeg",
+      "https://i.imgur.com/qa0O6fg.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 13,
+    "title": "Elegant Patent Leather Peep-Toe Pumps with Gold-Tone Heel",
+    "slug": "elegant-patent-leather-peep-toe-pumps",
+    "price": 53,
+    "description": "Step into sophistication with these chic peep-toe pumps, showcasing a lustrous patent leather finish and an eye-catching gold-tone block heel. The ornate buckle detail adds a touch of glamour, perfect for elevating your evening attire or complementing a polished daytime look.",
+    "category": {
+      "id": 13,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/AzAY4Ed.jpeg",
+      "https://i.imgur.com/umfnS9P.jpeg",
+      "https://i.imgur.com/uFyuvLg.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 14,
+    "title": "Elegant Purple Leather Loafers",
+    "slug": "elegant-purple-leather-loafers",
+    "price": 17,
+    "description": "Step into sophistication with our Elegant Purple Leather Loafers, perfect for making a bold statement. Crafted from high-quality leather with a vibrant purple finish, these shoes feature a classic loafer silhouette that's been updated with a contemporary twist. The comfortable slip-on design and durable soles ensure both style and functionality for the modern man.",
+    "category": {
+      "id": 14,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/Au8J9sX.jpeg",
+      "https://i.imgur.com/gdr8BW2.jpeg",
+      "https://i.imgur.com/KDCZxnJ.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 15,
+    "title": "Classic Blue Suede Casual Shoes",
+    "slug": "classic-blue-suede-casual-shoes",
+    "price": 39,
+    "description": "Step into comfort with our Classic Blue Suede Casual Shoes, perfect for everyday wear. These shoes feature a stylish blue suede upper, durable rubber soles for superior traction, and classic lace-up fronts for a snug fit. The sleek design pairs well with both jeans and chinos, making them a versatile addition to any wardrobe.",
+    "category": {
+      "id": 15,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/sC0ztOB.jpeg",
+      "https://i.imgur.com/Jf9DL9R.jpeg",
+      "https://i.imgur.com/R1IN95T.jpeg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 16,
+    "title": "Sleek Futuristic Electric Bicycle",
+    "slug": "sleek-futuristic-electric-bicycle",
+    "price": 22,
+    "description": "This modern electric bicycle combines style and efficiency with its unique design and top-notch performance features. Equipped with a durable frame, enhanced battery life, and integrated tech capabilities, it's perfect for the eco-conscious commuter looking to navigate the city with ease.",
+    "category": {
+      "id": 16,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/BG8J0Fj.jpg",
+      "https://i.imgur.com/ujHBpCX.jpg",
+      "https://i.imgur.com/WHeVL9H.jpg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 17,
+    "title": "Sleek All-Terrain Go-Kart",
+    "slug": "sleek-all-terrain-go-kart",
+    "price": 37,
+    "description": "Experience the thrill of outdoor adventures with our Sleek All-Terrain Go-Kart, featuring a durable frame, comfortable racing seat, and robust, large-tread tires perfect for handling a variety of terrains. Designed for fun-seekers of all ages, this go-kart is an ideal choice for backyard racing or exploring local trails.",
+    "category": {
+      "id": 17,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/Ex5x3IU.jpg",
+      "https://i.imgur.com/z7wAQwe.jpg",
+      "https://i.imgur.com/kc0Dj9S.jpg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 18,
+    "title": "Radiant Citrus Eau de Parfum",
+    "slug": "radiant-citrus-eau-de-parfum",
+    "price": 73,
+    "description": "Indulge in the essence of summer with this vibrant citrus-scented Eau de Parfum. Encased in a sleek glass bottle with a bold orange cap, this fragrance embodies freshness and elegance. Perfect for daily wear, it's an olfactory delight that leaves a lasting, zesty impression.",
+    "category": {
+      "id": 18,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/xPDwUb3.jpg",
+      "https://i.imgur.com/3rfp691.jpg",
+      "https://i.imgur.com/kG05a29.jpg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 19,
+    "title": "Sleek Olive Green Hardshell Carry-On Luggage",
+    "slug": "sleek-olive-green-hardshell-carry-on-luggage",
+    "price": 48,
+    "description": "Travel in style with our durable hardshell carry-on, perfect for weekend getaways and business trips. This sleek olive green suitcase features smooth gliding wheels for easy airport navigation, a sturdy telescopic handle, and a secure zippered compartment to keep your belongings safe. Its compact size meets most airline overhead bin requirements, ensuring a hassle-free flying experience.",
+    "category": {
+      "id": 19,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/jVfoZnP.jpg",
+      "https://i.imgur.com/Tnl15XK.jpg",
+      "https://i.imgur.com/7OqTPO6.jpg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 20,
+    "title": "Chic Transparent Fashion Handbag",
+    "slug": "chic-transparent-fashion-handbag",
+    "price": 61,
+    "description": "Elevate your style with our Chic Transparent Fashion Handbag, perfect for showcasing your essentials with a clear, modern edge. This trendy accessory features durable acrylic construction, luxe gold-tone hardware, and an elegant chain strap. Its compact size ensures you can carry your day-to-day items with ease and sophistication.",
+    "category": {
+      "id": 20,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/Lqaqz59.jpg",
+      "https://i.imgur.com/uSqWK0m.jpg",
+      "https://i.imgur.com/atWACf1.jpg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 21,
+    "title": "Trendy Pink-Tinted Sunglasses",
+    "slug": "trendy-pink-tinted-sunglasses",
+    "price": 38,
+    "description": "Step up your style game with these fashionable black-framed, pink-tinted sunglasses. Perfect for making a statement while protecting your eyes from the glare. Their bold color and contemporary design make these shades a must-have accessory for any trendsetter looking to add a pop of color to their ensemble.",
+    "category": {
+      "id": 21,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": [
+      "https://i.imgur.com/0qQBkxX.jpg",
+      "https://i.imgur.com/I5g1DoE.jpg",
+      "https://i.imgur.com/myfFQBW.jpg"
+    ],
+    "creationAt": "2025-11-23T23:56:07.000Z",
+    "updatedAt": "2025-11-23T23:56:07.000Z"
+  },
+  {
+    "id": 22,
+    "title": "Innovative Multi-Function Electronics Device",
+    "slug": "innovative-multi-function-electronics-device",
+    "price": 100,
+    "description": "Discover the latest in technology with this versatile electronics device designed for multiple functionalities. Perfect for tech enthusiasts looking for efficiency and style in one package.",
+    "category": {
+      "id": 22,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": ["https://placeimg.com/640/480/any"],
+    "creationAt": "2025-11-24T04:54:59.000Z",
+    "updatedAt": "2025-11-24T04:54:59.000Z"
+  },
+  {
+    "id": 23,
+    "title": "Lightweight Stylish Sneakers",
+    "slug": "lightweight-stylish-sneakers",
+    "price": 343,
+    "description": "Experience comfort and style with these lightweight casual sneakers, perfect for daily wear and versatile enough to match any casual outfit.",
+    "category": {
+      "id": 23,
+      "name": "Shoes",
+      "slug": "shoes",
+      "image": "https://i.imgur.com/qNOjJje.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": ["https://static.xabar.uz/crop/1/7/720_460_95_1747089670.jpg"],
+    "creationAt": "2025-11-24T05:25:05.000Z",
+    "updatedAt": "2025-11-24T05:25:05.000Z"
+  },
+  {
+    "id": 24,
+    "title": "Versatile Everyday Gadget",
+    "slug": "versatile-everyday-gadget",
+    "price": 88,
+    "description": "This high-quality gadget is designed to serve multiple everyday purposes, combining functionality and innovation for your convenience.",
+    "category": {
+      "id": 24,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:55:56.000Z"
+    },
+    "images": ["https://i.imgur.com/mp3rUty.jpeg"],
+    "creationAt": "2025-11-24T06:14:18.000Z",
+    "updatedAt": "2025-11-24T06:14:18.000Z"
+  },
+  {
+    "id": 25,
+    "title": "Premium High-Tech Electronics Item",
+    "slug": "premium-high-tech-electronics-item",
+    "price": 12345678,
+    "description": "An exclusive high-tech electronics item designed for professionals seeking the ultimate performance and reliability.",
+    "category": {
+      "id": 25,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": ["https://placeimg.com/640/480/any"],
+    "creationAt": "2025-11-24T06:27:29.000Z",
+    "updatedAt": "2025-11-24T06:27:29.000Z"
+  },
+  {
+    "id": 26,
+    "title": "Spacious IKEA Modern Wardrobe",
+    "slug": "spacious-ikea-modern-wardrobe",
+    "price": 200,
+    "description": "An amazing IKEA wardrobe combining modern design with spacious storage, perfect for organizing your clothing and accessories efficiently.",
+    "category": {
+      "id": 26,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": ["https://placeimg.com/640/480/tech"],
+    "creationAt": "2025-11-24T07:01:25.000Z",
+    "updatedAt": "2025-11-24T07:01:25.000Z"
+  },
+  {
+    "id": 27,
+    "title": "Contemporary Minimalist Furniture Piece",
+    "slug": "contemporary-minimalist-furniture-piece",
+    "price": 22,
+    "description": "A stylish and functional minimalist furniture piece designed to enhance the aesthetics of modern living spaces.",
+    "category": {
+      "id": 27,
+      "name": "Furniture",
+      "slug": "furniture",
+      "image": "https://i.imgur.com/Qphac99.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=400&q=80"
+    ],
+    "creationAt": "2025-11-24T07:08:07.000Z",
+    "updatedAt": "2025-11-24T07:08:07.000Z"
+  },
+  {
+    "id": 28,
+    "title": "Exclusive Electronics Mystery Box",
+    "slug": "exclusive-electronics-mystery-box",
+    "price": 150000,
+    "description": "Unbox excitement with our exclusive Electronics Mystery Box, packed with a surprise assortment of cutting-edge gadgets and tech accessories.",
+    "category": {
+      "id": 28,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://cdn.pixabay.com/photo/2014/03/06/21/56/coffer-281247_1280.jpg"
+    ],
+    "creationAt": "2025-11-24T07:15:02.000Z",
+    "updatedAt": "2025-11-24T07:15:28.000Z"
+  },
+  {
+    "id": 29,
+    "title": "Fresh Pineapple Accessory",
+    "slug": "fresh-pineapple-accessory",
+    "price": 10,
+    "description": "A quirky and fun pineapple-themed accessory, perfect for adding a tropical vibe to your collection.",
+    "category": {
+      "id": 29,
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "image": "https://i.imgur.com/BG8J0Fj.jpg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-24T05:14:47.000Z"
+    },
+    "images": ["https://placeimg.com/640/480/tech"],
+    "creationAt": "2025-11-24T07:28:10.000Z",
+    "updatedAt": "2025-11-24T07:28:10.000Z"
+  },
+  {
+    "id": 30,
+    "title": "Compact Advanced Electronics Device",
+    "slug": "compact-advanced-electronics-device",
+    "price": 99,
+    "description": "A compact advanced electronics device designed to meet the needs of modern consumers looking for reliability and performance.",
+    "category": {
+      "id": 30,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": ["https://www.photopea.com/img/table.webp"],
+    "creationAt": "2025-11-24T07:54:07.000Z",
+    "updatedAt": "2025-11-24T07:54:07.000Z"
+  },
+  {
+    "id": 31,
+    "title": "Basic Electronics Utility Item",
+    "slug": "basic-electronics-utility-item",
+    "price": 10,
+    "description": "A fundamental electronics utility item ideal for daily use, offering simplicity and efficiency in one compact product.",
+    "category": {
+      "id": 31,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": ["https://placehold.co/600x400"],
+    "creationAt": "2025-11-24T08:02:49.000Z",
+    "updatedAt": "2025-11-24T08:02:49.000Z"
+  },
+  {
+    "id": 32,
+    "title": "Sleek Modern Electronics Gadget",
+    "slug": "sleek-modern-electronics-gadget",
+    "price": 11,
+    "description": "A sleek and modern electronics gadget designed for everyday convenience and innovative use.",
+    "category": {
+      "id": 32,
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "https://i.imgur.com/ZANVnHE.jpeg",
+      "creationAt": "2025-11-23T23:56:07.000Z",
+      "updatedAt": "2025-11-23T23:56:07.000Z"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1497316730643-415fac54a2af?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8"
+    ],
+    "creationAt": "2025-11-24T08:02:53.000Z",
+    "updatedAt": "2025-11-24T08:02:53.000Z"
+  }
+]
