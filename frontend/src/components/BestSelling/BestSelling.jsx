@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-// react icons
-import { FaStar } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import { IoIosHeart, IoMdHeartEmpty } from "react-icons/io";
 
-const FeatureProducts = () => {
-  const [products, setProducts] = useState([]);
+const BestSelling = () => {
+  const [bestSelling, setBestSelling] = useState([]);
 
   useEffect(() => {
     // Fetch products.json from public folder
@@ -13,7 +10,7 @@ const FeatureProducts = () => {
       .then((res) => res.json())
       .then((data) => {
         // For now, just take first 8 products as featured
-        setProducts(data.slice(0, 8));
+        setBestSelling(data.slice(8, 14));
       })
       .catch((err) => console.error("Error fetching products:", err));
   }, []);
@@ -21,20 +18,20 @@ const FeatureProducts = () => {
   return (
     <>
       <section className="py-10 px-4">
-        <h1 className="text-2xl font-bold mb-6">Featured Products</h1>
+        <h1 className="text-2xl font-bold mb-6">Best Selling Products</h1>
 
         {/* GRID */}
         <div
           className="
-          grid 
-          grid-cols-1 
-          sm:grid-cols-2 
-          md:grid-cols-3 
-          lg:grid-cols-4 
-          gap-6
-        "
+            grid 
+            grid-cols-1 
+            sm:grid-cols-2 
+            md:grid-cols-3 
+            lg:grid-cols-4 
+            gap-6
+          "
         >
-          {products.map((product) => {
+          {bestSelling.map((product) => {
             const mainImage =
               product.images?.[0] || "https://via.placeholder.com/300";
 
@@ -76,4 +73,4 @@ const FeatureProducts = () => {
   );
 };
 
-export default FeatureProducts;
+export default BestSelling;
