@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeart, IoMdHeartEmpty } from "react-icons/io";
+import { Link } from "react-router";
 
 const FeatureProducts = () => {
   const [products, setProducts] = useState([]);
@@ -61,9 +62,13 @@ const FeatureProducts = () => {
                   <p className="text-xl font-semibold text-[#0FABCA]">
                     ${product.price}
                   </p>
-
+                  <Link
+                    to={`/products/${product.id}`}
+                    className="btn btn-outline w-1/2"
+                  >
+                    See More
+                  </Link>
                   <button className="p-2 border border-[#0FABCA] rounded-md group hover:bg-[#0FABCA] transition flex items-center gap-2">
-                    Add To Cart
                     <IoCartOutline className="text-[#0FABCA] group-hover:text-white text-xl" />
                   </button>
                 </div>
