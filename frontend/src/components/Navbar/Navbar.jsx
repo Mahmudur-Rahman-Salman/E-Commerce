@@ -174,6 +174,7 @@
 
 import React, { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -295,6 +296,20 @@ const Navbar = () => {
             </ul>
           </div>
         )}
+        <div class=" flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
+          <nav class="flex flex-wrap items-center text-base  justify-center">
+            <Link to="/" class="mr-5 hover:text-gray-900">
+              Home
+            </Link>
+            <Link to="/" class="mr-5 hover:text-gray-900">
+              All Products
+            </Link>
+            <Link to="/" class="mr-5 hover:text-gray-900">
+              Category
+            </Link>
+            <Link to="/" class="hover:text-gray-900">Signup</Link>
+          </nav>
+        </div>
       </nav>
     </>
   );
