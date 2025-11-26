@@ -8,14 +8,17 @@ const Offers = () => {
     {
       title: "Up to 40% Off",
       subtitle: "Winter Collection",
+      image: ecommerceProductOne,
     },
     {
       title: "Buy 1 Get 1 Free",
       subtitle: "Accessories Sale",
+      image: ecommerceProductTwo,
     },
     {
       title: "Mega Deals",
       subtitle: "Electronics Discount",
+      image: ecommerceProductThree,
     },
   ];
   return (
@@ -36,7 +39,7 @@ const Offers = () => {
               />
 
               {/* overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center text-white p-4">
+              <div className="absolute inset-0 bg-white/50 flex flex-col justify-center items-center text-center text-black p-4">
                 <h2 className="text-xl font-bold">{offer.title}</h2>
                 <p className="text-sm mt-1">{offer.subtitle}</p>
 
