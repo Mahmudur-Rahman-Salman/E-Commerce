@@ -5,15 +5,14 @@ import FeatureProducts from "../../components/FeatureProducts/FeatureProducts";
 import BestSelling from "../../components/BestSelling/BestSelling";
 import Offers from "../../components/Offers/Offers";
 
-
 const Home = () => {
   return (
     <>
       <HeroBanner></HeroBanner>
       <Categories></Categories>
+      <Offers></Offers>
       <FeatureProducts></FeatureProducts>
       <BestSelling></BestSelling>
-      <Offers></Offers>
     </>
   );
 };
