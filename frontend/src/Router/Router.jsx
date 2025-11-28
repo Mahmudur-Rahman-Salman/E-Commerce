@@ -3,6 +3,7 @@ import RootLayout from "../Layouts/RootLayout";
 import Home from "../Pages/Home/Home";
 import AllProducts from "../Pages/AllProducts/AllProducts";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
+import Category from "../Pages/Category/Category";
 
 
 
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/products/:id",
         Component: ProductDetails
+      }, 
+      {
+        path: "/category",
+        Component: Category,
       }
     ],
   },

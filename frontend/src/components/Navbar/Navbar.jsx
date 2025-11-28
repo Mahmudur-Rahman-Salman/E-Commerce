@@ -52,16 +52,18 @@ const Navbar = () => {
               {dropdownOpen && (
                 <ul className="absolute right-0 mt-2 w-40 bg-base-100 shadow-md rounded-md py-2">
                   <li>
-                    <a className="px-4 py-2 hover:bg-gray-100">My Orders</a>
+                    <Link className="px-4 py-2 hover:bg-gray-100">
+                      My Orders
+                    </Link>
                   </li>
                   <li>
-                    <a className="px-4 py-2 hover:bg-gray-100">Profile</a>
+                    <Link className="px-4 py-2 hover:bg-gray-100">Profile</Link>
                   </li>
                   <li>
-                    <a className="px-4 py-2 hover:bg-gray-100">Logout</a>
+                    <Link className="px-4 py-2 hover:bg-gray-100">Logout</Link>
                   </li>
                   <li>
-                    <a className="px-4 py-2 hover:bg-gray-100">Sign In</a>
+                    <Link className="px-4 py-2 hover:bg-gray-100">Sign In</Link>
                   </li>
                 </ul>
               )}
@@ -122,18 +124,18 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-        <div class=" flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
-          <nav class="flex flex-wrap items-center text-base  justify-center">
-            <Link to="/" class="mr-5 hover:text-gray-900">
+        <div className=" flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
+          <nav className="flex flex-wrap items-center text-base  justify-center">
+            <Link to="/" className="mr-5 hover:text-gray-900">
               Home
             </Link>
-            <Link to="/allproducts" class="mr-5 hover:text-gray-900">
+            <Link to="/allproducts" className="mr-5 hover:text-gray-900">
               All Products
             </Link>
-            <Link to="/" class="mr-5 hover:text-gray-900">
+            <Link to="/category" className="mr-5 hover:text-gray-900">
               Category
             </Link>
-            <Link to="/" class="hover:text-gray-900">
+            <Link to="/" className="hover:text-gray-900">
               Signup
             </Link>
           </nav>
