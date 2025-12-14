@@ -1,21 +1,51 @@
 import React, { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  // LOGOUT HANDLER
+  const handleLogout = async () => {
+    try {
+      await logout();
+
+      await Swal.fire({
+        icon: "success",
+        title: "Logged Out",
+        text: "You have been logged out successfully.",
+        timer: 1500,
+        showConfirmButton: false,
+      });
+
+      navigate("/login");
+    } catch {
+      Swal.fire({
+        icon: "error",
+        title: "Logout Failed",
+        text: "Something went wrong. Try again.",
+      });
+    }
+  };
   return (
     <>
       <nav className="bg-base-100 shadow-sm px-4 py-2 md:px-10 fixed w-full z-50">
         <div className="flex items-center justify-between">
           {/* Left: Logo */}
           <div className="flex items-center">
-            <a className="text-xl font-bold">E-Commerce</a>
+            <Link to="/" className="text-xl font-bold">
+              E-Commerce
+            </Link>
           </div>
 
-          {/* Center: Search Bar */}
-          <div className="flex-1  max-w-4xl  mx-4 hidden md:flex">
+          {/* Center: Search */}
+          <div className="flex-1 max-w-4xl mx-4 hidden md:flex">
             <input
               type="text"
               placeholder="Search products..."
@@ -23,9 +53,9 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Right: Cart + Profile */}
+          {/* Right section */}
           <div className="flex items-center gap-4">
-            {/* Cart Icon */}
+            {/* Cart */}
             <button className="btn btn-ghost btn-circle relative">
               <FiShoppingCart className="text-xl" />
               <span className="badge badge-xs badge-primary absolute -top-1 -right-1">
@@ -33,7 +63,7 @@ const Navbar = () => {
               </span>
             </button>
 
-            {/* Profile Dropdown */}
+            {/* Profile + Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -42,7 +72,10 @@ const Navbar = () => {
                 <div className="avatar">
                   <div className="w-8 rounded-full">
                     <img
-                      src="https://i.ibb.co/VTqw5rY/img-container.png"
+                      src={
+                        user?.photoURL ||
+                        "https://i.ibb.co/VTqw5rY/img-container.png"
+                      }
                       alt="User"
                     />
                   </div>
@@ -50,26 +83,45 @@ const Navbar = () => {
               </button>
 
               {dropdownOpen && (
-                <ul className="absolute right-0 mt-2 w-40 bg-base-100 shadow-md rounded-md py-2">
-                  <li>
-                    <Link className="px-4 py-2 hover:bg-gray-100">
-                      My Orders
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="px-4 py-2 hover:bg-gray-100">Profile</Link>
-                  </li>
-                  <li>
-                    <Link className="px-4 py-2 hover:bg-gray-100">Logout</Link>
-                  </li>
-                  <li>
-                    <Link className="px-4 py-2 hover:bg-gray-100">Sign In</Link>
-                  </li>
+                <ul className="absolute right-0 mt-3 w-48 bg-white/90 backdrop-blur-xl shadow-lg border border-gray-200 rounded-xl py-3 z-50 animate-dropdown">
+                  {user ? (
+                    <>
+                      <li>
+                        <Link className="block px-4 py-2 hover:bg-gray-100 hover:pl-5 transition-all duration-200 text-gray-700 font-medium">
+                          My Orders
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link className="block px-4 py-2 hover:bg-gray-100 hover:pl-5 transition-all duration-200 text-gray-700 font-medium">
+                          Profile
+                        </Link>
+                      </li>
+
+                      <li>
+                        <button
+                          onClick={handleLogout}
+                          className="w-full text-left px-4 py-2 hover:bg-red-100 hover:pl-5 transition-all duration-200 text-red-600 font-semibold"
+                        >
+                          Logout
+                        </button>
+                      </li>
+                    </>
+                  ) : (
+                    <li>
+                      <Link
+                        to="/login"
+                        className="block px-4 py-2 hover:bg-gray-100 hover:pl-5 transition-all duration-200 text-gray-700 font-medium"
+                      >
+                        Sign In
+                      </Link>
+                    </li>
+                  )}
                 </ul>
               )}
             </div>
 
-            {/* Mobile menu toggle */}
+            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="btn btn-ghost md:hidden btn-circle"
@@ -100,32 +152,45 @@ const Navbar = () => {
               placeholder="Search products..."
               className="input input-bordered w-full mb-2"
             />
+
             <ul className="flex flex-col gap-2">
-              <li>
-                <a className="block px-4 py-2 hover:bg-gray-100 rounded">
-                  My Orders
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 hover:bg-gray-100 rounded">
-                  Profile
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 hover:bg-gray-100 rounded">
-                  Logout
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 hover:bg-gray-100 rounded">
-                  Sign In
-                </a>
-              </li>
+              {user ? (
+                <>
+                  <li>
+                    <Link className="block px-4 py-2 hover:bg-gray-100 rounded">
+                      My Orders
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="block px-4 py-2 hover:bg-gray-100 rounded">
+                      Profile
+                    </Link>
+                  </li>
+                  <li>
+                    <button
+                      onClick={handleLogout}
+                      className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
+                    >
+                      Logout
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <li>
+                  <Link
+                    to="/login"
+                    className="block px-4 py-2 hover:bg-gray-100 rounded"
+                  >
+                    Sign In
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         )}
-        <div className=" flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
-          <nav className="flex flex-wrap items-center text-base  justify-center">
+
+        <div className="flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
+          <nav className="flex flex-wrap items-center text-base justify-center">
             <Link to="/" className="mr-5 hover:text-gray-900">
               Home
             </Link>
@@ -134,9 +199,6 @@ const Navbar = () => {
             </Link>
             <Link to="/category" className="mr-5 hover:text-gray-900">
               Category
-            </Link>
-            <Link to="/" className="hover:text-gray-900">
-              Signup
             </Link>
           </nav>
         </div>

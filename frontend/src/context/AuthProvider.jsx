@@ -10,6 +10,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.init";
+import Loader from "../components/Loader/Loader";
 
 const provider = new GoogleAuthProvider();
 
@@ -18,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // signup
-  const signup = async (email, password) => {
+  const signup = async (name, email, password) => {
     setLoading(true);
     const result = await createUserWithEmailAndPassword(auth, email, password);
     await updateProfile(result.user, { displayName: name });
@@ -31,10 +32,13 @@ export const AuthProvider = ({ children }) => {
   // Signin
   const signin = async (email, password) => {
     setLoading(true);
-    const result = await signInWithEmailAndPassword(auth, email, password);
-
-    localStorage.setItem("user", JSON.stringify(result.user));
-    return result.user;
+    try {
+      const result = await signInWithEmailAndPassword(auth, email, password);
+      localStorage.setItem("user", JSON.stringify(result.user));
+      return result.user;
+    } finally {
+      setLoading(false); // <- ensure loading is reset
+    }
   };
 
   // Google Login
@@ -66,6 +70,9 @@ export const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
+  // Global Loader
+  if (loading) return <Loader />;
+
   const value = {
     user,
     loading,
@@ -75,7 +82,5 @@ export const AuthProvider = ({ children }) => {
     logout,
   };
 
-  return (
-    <AuthContext.Provider value={{ value }}>{children}</AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
