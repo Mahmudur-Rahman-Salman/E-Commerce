@@ -1,20 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router";
+import useAxios from "../../hooks/useAxios";
 
 const BestSelling = () => {
   const [bestSelling, setBestSelling] = useState([]);
+  const axios = useAxios();
 
   useEffect(() => {
-    // Fetch products.json from public folder
-    fetch("/products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        // For now, just take first 8 products as featured
-        setBestSelling(data.slice(8, 14));
-      })
-      .catch((err) => console.error("Error fetching products:", err));
-  }, []);
+    const fetchBestSelling = async () => {
+      try {
+        const res = await axios.get("/products"); // your backend products endpoint
+        const data = res.data;
+
+        // For now, just take first 8 products as best selling
+        setBestSelling(data.slice(0, 8));
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      }
+    };
+
+    fetchBestSelling();
+  }, [axios]);  
 
   return (
     <>
