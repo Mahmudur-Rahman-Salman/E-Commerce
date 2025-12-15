@@ -4,20 +4,30 @@ import { FaStar } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeart, IoMdHeartEmpty } from "react-icons/io";
 import { Link } from "react-router";
+import useAxios from "../../hooks/useAxios";
 
 const FeatureProducts = () => {
   const [products, setProducts] = useState([]);
-
+  const axios = useAxios();
+  
+  
   useEffect(() => {
-    // Fetch products.json from public folder
-    fetch("/products.json")
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchProducts = async () => {
+      try {
+        const res = await axios.get("/products"); // your backend products endpoint
+        const data = res.data;
+
         // For now, just take first 8 products as featured
         setProducts(data.slice(0, 8));
-      })
-      .catch((err) => console.error("Error fetching products:", err));
-  }, []);
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      }
+    };
+
+    fetchProducts();
+  }, [axios]);
+
+
 
   return (
     <>
@@ -82,3 +92,5 @@ const FeatureProducts = () => {
 };
 
 export default FeatureProducts;
+
+// This FeatureProducts component fetches a list of products from the backend using a custom Axios hook (useAxios) and displays a selection of featured products in a responsive grid layout. Each product card includes an image, title, category, price, and a link to view more details. The component uses the useEffect hook to fetch the data when it mounts and manages the product data with the useState hook.

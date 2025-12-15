@@ -11,6 +11,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const from = location.state?.from?.pathname || "/";
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -25,7 +27,7 @@ const Login = () => {
         showConfirmButton: false,
       });
 
-      navigate("/");
+      navigate(from, { replace: true });
     } catch (err) {
       let message = "Something went wrong.";
 
@@ -113,3 +115,6 @@ const Login = () => {
 };
 
 export default Login;
+
+
+// This Login component provides a user interface for users to log into their accounts. It includes form fields for email and password, and it uses the useAuth hook to handle the authentication process. Upon form submission, it attempts to sign in the user and provides feedback through SweetAlert2 notifications. If the login is successful, the user is redirected to their intended destination or the home page. The component also includes a link to the registration page for new users and integrates a SocialLogin component for alternative login methods.  
