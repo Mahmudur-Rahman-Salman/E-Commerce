@@ -1,20 +1,38 @@
-import React, { useEffect, useState } from "react";
+
 import { FiShoppingCart } from "react-icons/fi";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import useProducts from '../../hooks/useProducts';
+
+
+
+
 
 const AllProducts = () => {
-  const [allProducts, setAllProducts] = useState([]);
+  // const [allProducts, setAllProducts] = useState([]);
 
-  useEffect(() => {
-    // Fetch products.json from public folder
-    fetch("/products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        // For now, just take first 8 products as featured
-        setAllProducts(data);
-      })
-      .catch((err) => console.error("Error fetching products:", err));
-  }, []);
+  // const axios = useAxios();
+
+  // useEffect(() => {
+  //   const allProductList = async () => {
+  //     try {
+  //       const res = await axios.get("/products"); // your backend products endpoint
+  //       const data = res.data;
+
+  //       // For now, just take first 8 products as featured
+  //       setAllProducts(data);
+  //     } catch (err) {
+  //       console.error("Error fetching products:", err);
+  //     }
+  //   };
+
+  //   allProductList();
+  // }, [axios]);
+
+  const { products } = useProducts();
+  const allProducts = products;
+ 
+
+
   return (
     <>
       <section className="py-16 px-4">
@@ -26,7 +44,7 @@ const AllProducts = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allProducts.map((product) => (
-           <ProductCard key={product.id} product={product} />
+            <ProductCard key={product._id} product={product} />
           ))}
         </div>
       </section>
@@ -35,6 +53,3 @@ const AllProducts = () => {
 };
 
 export default AllProducts;
-
-
-

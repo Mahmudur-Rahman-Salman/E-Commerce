@@ -1,32 +1,34 @@
-import React, { useEffect, useState } from "react";
 // react icons
 import { FaStar } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeart, IoMdHeartEmpty } from "react-icons/io";
 import { Link } from "react-router";
-import useAxios from "../../hooks/useAxios";
+import useProducts from "../../hooks/useProducts";
+
+
 
 const FeatureProducts = () => {
-  const [products, setProducts] = useState([]);
-  const axios = useAxios();
-  
-  
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await axios.get("/products"); // your backend products endpoint
-        const data = res.data;
+  // const [products, setProducts] = useState([]);
+  // const axios = useAxios();
 
-        // For now, just take first 8 products as featured
-        setProducts(data.slice(0, 8));
-      } catch (err) {
-        console.error("Error fetching products:", err);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     try {
+  //       const res = await axios.get("/products"); // your backend products endpoint
+  //       const data = res.data;
 
-    fetchProducts();
-  }, [axios]);
+  //       // For now, just take first 8 products as featured
+  //       setProducts(data.slice(0, 8));
+  //     } catch (err) {
+  //       console.error("Error fetching products:", err);
+  //     }
+  //   };
 
+  //   fetchProducts();
+  // }, [axios]);
+
+  const { products } = useProducts();
+  const featured = products.slice(0, 8);
 
 
   return (
@@ -45,7 +47,7 @@ const FeatureProducts = () => {
           gap-6
         "
         >
-          {products.map((product) => {
+          {featured.map((product) => {
             const mainImage =
               product.images?.[0] || "https://via.placeholder.com/300";
 
@@ -73,12 +75,15 @@ const FeatureProducts = () => {
                     ${product.price}
                   </p>
                   <Link
-                    to={`/products/${product.id}`}
+                    to={`/products/${product._id}`}
                     className="btn btn-outline w-1/2"
                   >
                     See More
                   </Link>
-                  <button className="p-2 border border-[#0FABCA] rounded-md group hover:bg-[#0FABCA] transition flex items-center gap-2">
+                  <button
+                   
+                    className="p-2 border border-[#0FABCA] rounded-md group hover:bg-[#0FABCA] transition flex items-center gap-2"
+                  >
                     <IoCartOutline className="text-[#0FABCA] group-hover:text-white text-xl" />
                   </button>
                 </div>

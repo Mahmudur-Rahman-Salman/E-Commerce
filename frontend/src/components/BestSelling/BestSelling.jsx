@@ -1,28 +1,32 @@
-import React, { useEffect, useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router";
-import useAxios from "../../hooks/useAxios";
+import useProducts from '../../hooks/useProducts';
+
+
 
 const BestSelling = () => {
-  const [bestSelling, setBestSelling] = useState([]);
-  const axios = useAxios();
+  // const [bestSelling, setBestSelling] = useState([]);
+  // const axios = useAxios();
 
-  useEffect(() => {
-    const fetchBestSelling = async () => {
-      try {
-        const res = await axios.get("/products"); // your backend products endpoint
-        const data = res.data;
+  // useEffect(() => {
+  //   const fetchBestSelling = async () => {
+  //     try {
+  //       const res = await axios.get("/products"); // your backend products endpoint
+  //       const data = res.data;
 
-        // For now, just take first 8 products as best selling
-        setBestSelling(data.slice(0, 8));
-      } catch (err) {
-        console.error("Error fetching products:", err);
-      }
-    };
+  //       // For now, just take first 8 products as best selling
+  //       setBestSelling(data.slice(0, 8));
+  //     } catch (err) {
+  //       console.error("Error fetching products:", err);
+  //     }
+  //   };
 
-    fetchBestSelling();
-  }, [axios]);  
+  //   fetchBestSelling();
+  // }, [axios]);
 
+  const { products } = useProducts();
+  const bestSelling = products.slice(8, 16); // Assuming first 8 are best selling
+ 
   return (
     <>
       <section className="py-10 px-4">
@@ -67,12 +71,15 @@ const BestSelling = () => {
                     ${product.price}
                   </p>
                   <Link
-                    to={`/products/${product.id}`}
+                    to={`/products/${product._id}`}
                     className="btn btn-outline w-1/2"
                   >
                     See More
                   </Link>
-                  <button className="p-2 border border-[#0FABCA] rounded-md group hover:bg-[#0FABCA] transition flex items-center gap-2">
+                  <button
+                   
+                    className="p-2 border border-[#0FABCA] rounded-md group hover:bg-[#0FABCA] transition flex items-center gap-2"
+                  >
                     <IoCartOutline className="text-[#0FABCA] group-hover:text-white text-xl" />
                   </button>
                 </div>
