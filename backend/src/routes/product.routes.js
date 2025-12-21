@@ -9,12 +9,16 @@ import {
 
 const router = express.Router();
 // PUBLIC ROUTES
-router.get("/", getAllProducts); // GET /api/products
-router.get("/:productId", getProductById); // GET /api/products/:productId
+router.get("/", getAllProducts); 
+router.get("/:productId", getProductById); 
 
 // ADMIN ROUTES
-router.post("/", createProduct); // POST /api/products
-router.patch("/:productId", updateProduct); // PATCH /api/products/:productId
-router.delete("/:productId", deleteProduct);
-
+router.post("/addProducts", createProduct); 
+router.patch("/:updateProductById", updateProduct); 
+router.delete("/:deleteProductById", deleteProduct);
+  
 export default router;
+
+
+
+// Product Routes     
