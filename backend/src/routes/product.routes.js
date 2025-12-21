@@ -9,16 +9,14 @@ import {
 
 const router = express.Router();
 // PUBLIC ROUTES
-router.get("/", getAllProducts); 
-router.get("/:productId", getProductById); 
+router.get("/", getAllProducts);
+router.get("/:productId", getProductById);
 
 // ADMIN ROUTES
-router.post("/addProducts", createProduct); 
-router.patch("/:updateProductById", updateProduct); 
-router.delete("/:deleteProductById", deleteProduct);
-  
+router.post("/addProducts", createProduct);
+router.patch("/:productId", updateProduct);
+router.delete("/:productId", deleteProduct);
+
 export default router;
 
-
-
-// Product Routes     
+// Product Routes
