@@ -20,3 +20,6 @@ app.get("/", (req, res) => {
 export default app;
 
 
+// Express App Setup  
+
+// app.use("/products", productRoutes); this line connects the product routes to the main application under the "/products" path.
