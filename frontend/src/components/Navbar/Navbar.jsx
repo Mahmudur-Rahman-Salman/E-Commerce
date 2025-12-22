@@ -200,6 +200,9 @@ const Navbar = () => {
             <Link to="/category" className="mr-5 hover:text-gray-900">
               Category
             </Link>
+            <Link to="/addProducts" className="mr-5 hover:text-gray-900">
+              AddProducts
+            </Link>
           </nav>
         </div>
       </nav>

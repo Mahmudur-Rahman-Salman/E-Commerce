@@ -6,7 +6,7 @@ import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import Category from "../Pages/Category/Category";
 import Login from "../Pages/Authentication/Login";
 import Register from "../Pages/Authentication/Register";
-// import AddProducts from "../Pages/AddProducts/AddProducts";
+import AddProducts from "../Pages/AddProducts/AddProducts";
 
 export const router = createBrowserRouter([
   {
@@ -37,10 +37,10 @@ export const router = createBrowserRouter([
         path: "register",
         Component: Register,
       },
-      // {
-      //   path: "addproducts",
-      //   Component: AddProducts,
-      // },
+      {
+        path: "addproducts",
+        Component: AddProducts
+      },
     ],
   },
 ]);

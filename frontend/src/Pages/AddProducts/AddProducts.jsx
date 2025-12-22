@@ -1,124 +1,133 @@
-import React, { useState } from "react";
-import useAxios from "../../hooks/useAxios";
-import { Swal } from "sweetalert2";
+import React from "react";
+import { useState } from "react";
+
+import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const AddProducts = () => {
-  const axios = useAxios();
-
+  const axios = useAxiosSecure();
   const [formData, setFormData] = useState({
     title: "",
+    slug: "",
     price: "",
     description: "",
-    image: "",
-    category: "",
-    stock: "",
+    stock: 0,
+    images: "",
+    categoryId: "",
+    categoryName: "",
+    categorySlug: "",
+    categoryImage: "",
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const product = {
+    const payload = {
       title: formData.title,
+      slug: formData.slug,
       price: Number(formData.price),
       description: formData.description,
-      images: [formData.image],
-      category: formData.category,
       stock: Number(formData.stock),
+      images: formData.images.split(",").map((img) => img.trim()),
+      category: {
+        id: Number(formData.categoryId),
+        name: formData.categoryName,
+        slug: formData.categorySlug,
+        image: formData.categoryImage,
+      },
     };
 
     try {
-      await axios.post("/products", product);
-
-      Swal.fire({
-        icon: "success",
-        title: "Product Added",
-        text: "Product saved to database",
+      const res = await axios.post("/products/addProducts", payload, {
+        headers: { "Content-Type": "application/json" },
       });
 
-      setFormData({
-        title: "",
-        price: "",
-        description: "",
-        image: "",
-        category: "",
-        stock: "",
-      });
-    } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Failed",
-        text: "Product not saved",
-      });
-      console.error(error);
+      console.log("Product Added:", res.data);
+      alert("Product added successfully");
+    } catch (err) {
+      console.error(err);
+      alert("Failed to add product");
     }
   };
   return (
-    <div className="max-w-xl mx-auto pt-24 px-4">
-      <h1 className="text-3xl font-bold mb-6">Add Product</h1>
+    <div className="min-h-screen pt-30 pb-16 bg-gray-50">
+      <div className="max-w-3xl mx-auto p-6 ">
+        <h1 className="text-2xl font-bold mb-6">Add Product</h1>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-          placeholder="Product Title"
-          className="input input-bordered w-full"
-          required
-        />
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            name="title"
+            placeholder="Title"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
+          <input
+            name="slug"
+            placeholder="Slug"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
+          <input
+            name="price"
+            type="number"
+            placeholder="Price"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
+          <textarea
+            name="description"
+            placeholder="Description"
+            onChange={handleChange}
+            className="textarea textarea-bordered w-full"
+          />
+          <input
+            name="stock"
+            type="number"
+            placeholder="Stock"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
 
-        <input
-          name="price"
-          type="number"
-          value={formData.price}
-          onChange={handleChange}
-          placeholder="Price"
-          className="input input-bordered w-full"
-          required
-        />
+          <input
+            name="images"
+            placeholder="Image URLs (comma separated)"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
 
-        <input
-          name="category"
-          value={formData.category}
-          onChange={handleChange}
-          placeholder="Category"
-          className="input input-bordered w-full"
-          required
-        />
+          <h2 className="font-semibold mt-4">Category</h2>
 
-        <input
-          name="image"
-          value={formData.image}
-          onChange={handleChange}
-          placeholder="Image URL"
-          className="input input-bordered w-full"
-          required
-        />
+          <input
+            name="categoryId"
+            placeholder="Category ID"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
+          <input
+            name="categoryName"
+            placeholder="Category Name"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
+          <input
+            name="categorySlug"
+            placeholder="Category Slug"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
+          <input
+            name="categoryImage"
+            placeholder="Category Image URL"
+            onChange={handleChange}
+            className="input input-bordered w-full"
+          />
 
-        <input
-          name="stock"
-          type="number"
-          value={formData.stock}
-          onChange={handleChange}
-          placeholder="Stock"
-          className="input input-bordered w-full"
-        />
-
-        <textarea
-          name="description"
-          value={formData.description}
-          onChange={handleChange}
-          placeholder="Description"
-          className="textarea textarea-bordered w-full"
-          required
-        />
-
-        <button className="btn btn-primary w-full">Add Product</button>
-      </form>
+          <button className="btn btn-primary w-full mt-4">Add Product</button>
+        </form>
+      </div>
     </div>
   );
 };
